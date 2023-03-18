@@ -6,6 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set syn=sh
 
 call plug#begin()
 
@@ -20,7 +21,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL+N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " need to install 'sudo apt install exuberant-ctags'
-" Plug 'https://github.com/neoclide/coc.nvim' " Autocompletion
+Plug 'https://github.com/neoclide/coc.nvim' " Autocompletion
 
 " Auto Completion Plugins
 Plug 'github/copilot.vim'
@@ -57,6 +58,3 @@ nnoremap <silent> <F8> :TagbarToggle<CR>
 
 :colorscheme jellybeans
 
-" Terminal Config
-
-nnoremap <silent> <F9> :TerminalSplit bash<CR>
